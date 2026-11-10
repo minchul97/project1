@@ -6,7 +6,7 @@ def scan_host(target, ports="1-10000"):
     """
     print(f"[*] 스캔 시작: {target}")
 
-    cmd = ["nmap", "-sV", "-p", ports, "--open", target]
+    cmd = ["nmap", "-sV", "-Pn", "-p", ports, "--open", target]
     result = subprocess.run(cmd, capture_output=True, text=True)
 
     print(result.stdout)
