@@ -1,6 +1,6 @@
 import subprocess
 
-def scan_host(target, ports="1-1024"):
+def scan_host(target, ports="1-10000"):
     """
     대상 호스트와 서비스를 스캔합니다.
     """
