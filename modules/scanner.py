@@ -9,6 +9,7 @@ def scan_host(target, ports="1-1024"):
     cmd = ["nmap", "-sV", "-p", ports, "--open", target]
     result = subprocess.run(cmd, capture_output=True, text=True)
 
+    print(result.stdout)
     return result.stdout
 
 def scan_network(targets):
