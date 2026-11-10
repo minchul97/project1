@@ -7,7 +7,8 @@ def check(target, port=23):
     """
     result = {
         "ncode": "N-08",
-        "item": f"{target}:{port}",
+        "item": "Telnet 평문 프로토콜 사용",
+        "target": f"{target}:{port}",
         "vulnerable": False,
         "risk": "중",
         "detail": "",
